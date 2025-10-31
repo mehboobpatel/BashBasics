@@ -20,6 +20,8 @@ fi
 if (($num >= 0)); then
 
 #SPACE is NOT mandatory inside (()) 
+#NO need to mention $ before variable name inside (()) 
+#Because inside (( )), Bash knows everything is numeric and won’t split or expand values.
 if ((num ==0 )); then
 	echo "A Number equals zero"
 elif (( $num < 0 )); then
