@@ -1,7 +1,8 @@
 #!/bin/bash
-IFC=3
 
-for((i=$IFC ; i<=10 ; i+=2))
+for((i=1; i<=10 ; i+=2))
 do 
-touch $i.txt
+echo $i
 done
+echo "-------------------"
+for i in {1..10..3}; do echo $i; done
